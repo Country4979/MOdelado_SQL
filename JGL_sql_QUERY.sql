@@ -3,7 +3,7 @@
 --Coches activos
 --Nombre modelo, marca y grupo de coches, Fecha de compra, Matricula, Nombre del color del coche, Total kilómetros, Nombre aseguradora y Número de póliza
 
-select m.nombremarca , mo.nombremodelo, ge.nombre, cf.dt_alta, c.matricula,  co.color_name, c.total_km, a.name, p.n_poliza 
+select m.nombremarca as Marca, mo.nombremodelo as modelo, ge.nombre as Grupo_Empresa, cf.dt_alta as Fecha_Alta, c.matricula as Matricula,  co.color_name as color, c.total_km as Km_Totales, a.name as Aseguradora, p.n_poliza as NªPoliza
 from jgl_sql.modelo mo inner
 join jgl_sql.marca m on mo.id_marca = m.id_marca
 join jgl_sql.g_emp ge on m.id_g_emp = ge.id_g_emp
