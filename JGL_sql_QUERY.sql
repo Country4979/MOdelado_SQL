@@ -12,4 +12,4 @@ join jgl_sql.coche_flota cf on c.id_car = cf.id_car
 join jgl_sql.color co on c.color_name = co.color_name
 join jgl_sql.poliza p on p.id_car = c.id_car
 join jgl_sql.aseguradora a on p.id_aseguradora = a.id_aseguradora 
-where cf.dt_end > '2023-01-30';
+where cf.dt_end > '2023-02-05';
